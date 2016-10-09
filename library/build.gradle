@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply from: '../build-config/gradle-quality.gradle'
+apply from: '../gradle/gradle-quality.gradle'
 
 dependencies {
     provided "com.android.support:support-annotations:$rootProject.ext.supportLibVersion"
@@ -36,4 +36,4 @@ android {
     }
 }
 
-apply from: '../build-config/gradle-push.gradle'
+apply from: '../gradle/gradle-push.gradle'
