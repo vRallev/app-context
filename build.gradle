@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.0'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+ext {
+    compileSdkVersion = 24
+    targetSdkVersion = compileSdkVersion
+    minSdkVersion = 14
+
+    buildToolsVersion = '24.0.3'
+
+    supportLibVersion = '24.2.1'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
